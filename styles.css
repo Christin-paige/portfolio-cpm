@@ -1,0 +1,20 @@
+body {
+    min-height: 100vh;
+    font-family: monospace;
+    place-content: center;
+    text-align: center;
+}
+.text {
+    position: relative;
+    font-size: 100px;
+}
+.icon {
+    height: 400px;
+}
+ul {
+    list-style: none;
+}
+.social-icons {
+    display: inline-block;
+
+}
