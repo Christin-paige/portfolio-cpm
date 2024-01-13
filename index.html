@@ -12,24 +12,24 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./logo.png" alt="Bootstrap" width="200" height="200">
+                    <img src="./logo.png" alt="christin martin's name in two circles for the logo" width="200" height="200">
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="nav justify-content-end">
+                  <li class="nav-item bg-body-tertiary">
+                   <a class="nav-link" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                    <a class="nav-link" href= "#about-me">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class = "nav-link" href= "#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href= "#contact-me">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -47,11 +47,11 @@
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Introducing...</h1>
 
-            <p class="lead">Christin P Martin from Washington D.C.</p>
+            <p class="lead">Christin Martin <br> from Washington D.C.</p>
           </div>
         </div>
       </div>
-   <container class="about-me">
+   <container class ="about-me">
     <div class = "container-sm">
     <p>Hello, I’m Christin, a full-stack web developer from the Washington D.C. area. I am passionate about 
         building and developing websites. My creativity and attention to detail lend themselves to the client side of development while 
@@ -63,47 +63,50 @@
 <br>
 <br>
    <!-- Container (About Me Section) -->
-<div id="about-me" class="container-fluid text-center bg-body-tertiary">
-    <h2>About Me</h2>
-    
-    <br>
+<section id="about-me" class="container-fluid text-center bg-body-tertiary">
+    <h1 class="about-me">About Me</h1>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <span class="icon"><img src="./book.svg"></span>
+        <span class="icon"><img src="./book.svg" width="50"></span>
         <h4>Life-long learner</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <p>I am happiest when I am learning new things.  That is what drew me to tech in the first place, it is an ever-evolving field and the learning never stops!</p>
       </div>
       <div class="col-sm-4">
-        <span class="icon"><img src="./chat-quote.svg"></span>
+        <span class="icon"><img src="./chat-quote.svg" width="50"></span>
         <h4>Adaptable</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <p>Adaptiblity has come natually to me as I have lived in eight states and moved countless. I am comfortable walking into new situations and I love meeting new people. </p>
       </div>
       <div class="col-sm-4">
-        <span class="icon"><img src="./balloon-heart.svg"></span>
+        <span class="icon"><img src="./balloon-heart.svg" width="50"></span>
         <h4>When I am not coding...</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <p>I am spending time with my three kids, reading, cooking, hiking, and walking my Boston terrier pup, Scout! But honestly, I am mostly coding :)</p>
       </div>
     </div>
-    <br><br>
    
-  </div>
+  </section>
   <section class="card-container" >
-
-    <div class="container" >
-  <h1 class="">Projects</h1>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<!--Projects section-->
+    <section id="projects" >
+  <h1 class="projects">Projects</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./pokedex.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="./pokedex.png" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
               <h1>Pokedex</h1>
-              <p class> The Pokedex app is a small application with HTML, CSS, and JavaScript that
-                loads data from an external API.  It enables the user to search
-                and see the stats of a particular Pokemon when clicked.</p>
+              <p class> The Pokedex app was the my first application using Javascript and an external API.  With the app, the user has the option to filter through the 150 Pokemon cards using a "search" feature 
+                to find their favorite. They can then see the stats of the Pokemon on by clicking on the modal.</p>
+                <h3>Technologies Used</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+              </ul>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://christin-paige.github.io/first-js-app/">Demo</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/first-js-app">Code</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://christin-paige.github.io/first-js-app/" class="link-secondary" target="_blank">Demo</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/first-js-app" class="link-secondary" target="_blank">Code</a></button>
                 </div>
               </div>
             </div>
@@ -112,16 +115,27 @@
   
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./indiefilms.png" role="img" aria-label="screenshot of the main view of the website, IndieFilms" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="./indiefilms.png" role="img" aria-label="screenshot of the main view of the website, IndieFilms" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
               <p class="card-text"> <h2>IndieFilms</h2>
-                <p> Introducing my first full-stack web application, an homage to independent films.</p>
-                <small class="text-body-secondary">Login: films<br>Password:12345</small></p>
+                <p> Introducing my first full-stack, single-page application, an homage to independent films.</p>
+                <h3>Technologies Used</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MondoDB</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                </ul>
+  </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://worthyindiefilms.netlify.app/login">Demo</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/myflix-client2">Code</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="./casestudy.html">Case Study</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://worthyindiefilms.netlify.app/login" class="link-secondary" target="_blank">Demo</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/myflix-client2" class="link-secondary" target="_blank">Code</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="./casestudy.html" class="link-secondary" target="_blank">Case Study</a></button>
                 </div>
               </div>
             </div>
@@ -130,7 +144,7 @@
        
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./meetapp.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"/>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="./meetapp.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
             <div class="card-body">
               <h2>Meet App</h2>
               <p> Meet is a serverless progressive web application (WPA) 
@@ -148,15 +162,39 @@
               </ul>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://christin-paige.github.io/meet/">Demo</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/meet">Code</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://christin-paige.github.io/meet/" class="link-secondary" target="_blank">Demo</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/meet" class="link-secondary" target="_blank">Code</a></button>
                 </div>
               </div>
             </div>
           </div>
           </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="./homing.png" role="img" aria-label="screenshot of the main screen of the homing app" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+              <div class="card-body">
+                <p class="card-text"> <h2>Homing</h2>
+                   Homing is a messaging app written in React Native and developed using Expo. Users have the option to send images and their location, optimized for both Android and iOS devices.</p>
+                   <h3>Technologies Used</h3>
+                   <ul>
+                     <li>React Native</li>
+                     <li>Expo</li>
+                     <li>Gifted Chat library</li>
+                     <li>Google Firestore</li>
+                     <li>Google Firebase</li>
+                   </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary "><a href="#" class="link-secondary" target="_blank">Demo</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/Christin-paige/chatapp" class="link-secondary" target="_blank">Code</a></button>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+              </div>
       </div>
-      </div>
+    </section>
      
       </section>
 
@@ -166,8 +204,8 @@
     <!-- Grid container -->
     <div class="container pt-4">
       <!-- Section: Social media -->
-      <section class="mb-4">
-  <div class="contact">
+      <section id="contact-me">
+ 
     <div class="contact-container">
     <h1 class="contact-title">Contact Me</h1>
     <ul>
@@ -177,13 +215,13 @@
      
     </ul>
     </div>
-    </div>
+   
  
 
 <div class="social-media">
   <ul>
      <li class="social-icons"><a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Christin-paige" target="_blank"><img src="./github.svg" aria-hidden="true"></a></li>
-     <li class="social-icons"><a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/christinpmartin" target="_blank"><img src="./twitter.svg" aria-hidden="true"></a></li>
+     <li class="social-icons"><a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/christinpmartin" target="_blank"><img src="./twitter-x.svg" aria-hidden="true"></a></li>
      <li class="social-icons"><a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/christin-martin-9991b5202/" target="_blank"><img src="./linkedin.svg" aria-hidden="true"></a></li>
   </ul>
 </div>
@@ -212,6 +250,7 @@
     }
     textTypingEffect(div, text);
    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

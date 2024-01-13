@@ -8,11 +8,30 @@ body {
     position: relative;
     font-size: 100px;
 }
-.icon {
-    height: 400px;
+h4 {
+    padding: 30px;
+}
+h1 {
+    padding: 50px;
 }
 ul {
     list-style: none;
+    
+}
+#about-me {
+   padding: 60px;
+   padding-top: 10px;
+}
+
+.nav-link {
+    color: gray;
+}
+.nav-link:hover {
+    color: pink;
+}
+
+#projects {
+padding: 20px 60px;
 }
 .social-icons {
     display: inline-block;
