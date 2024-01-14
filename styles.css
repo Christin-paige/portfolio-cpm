@@ -3,6 +3,10 @@ body {
     font-family: monospace;
     place-content: center;
     text-align: center;
+    
+}
+.btn:hover {
+    background-color: #ffdbdc;
 }
 .text {
     position: relative;
