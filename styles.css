@@ -20,7 +20,12 @@ h1 {
 }
 ul {
     list-style: none;
+    background: rgb(255,219,220);
+background: radial-gradient(circle, rgba(255,219,220,0.2637429971988795) 0%, rgba(186,190,194,0) 100%);
     
+}
+#navbarNav {
+    background: none;
 }
 #about-me {
    padding: 60px;
@@ -31,14 +36,20 @@ ul {
     color: gray;
 }
 .nav-link:hover {
-    color: pink;
+    color: #ffc0cb;
 }
 
 #projects {
 padding: 20px 60px;
+background: rgb(255,219,220);
+background: radial-gradient(circle, rgba(255,219,220,0.5242471988795518) 0%, rgba(186,190,194,0.3617822128851541) 100%);
 }
 .social-icons {
     display: inline-block;
 
 }
 
+.contact-container {
+    background: rgb(250,250,250);
+    background: radial-gradient(circle, rgba(250,250,250,1) 3%, rgba(171,169,169,0) 69%);
+}
