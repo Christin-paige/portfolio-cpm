@@ -1,24 +1,65 @@
-body{
-  height: 100vh;
-  margin: 50px;
-  font-family: 'Courier New', Courier, monospace;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
 }
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
-
-  
+  color: #aeb9cc;
 }
-.title{
+.header-title {
+  background-image: url('starry-background.JPEG');
+  background-position: bottom;
+  background-size: cover;
+  padding: 5rem;
+  min-height: 70vh;
+}
+.title {
   text-align: center;
-  margin: 100px;
+  padding-top: 70px;
+  font-size: clamp(4rem, 5vh + 0.5rem, 5rem);
+
+  color: #d8d8d8;
+  position: fixed;
+}
+
+.lead {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.site-header-mask {
+  position: absolute;
+  inset: 0;
+  -webkit-mask: url('dkl-hero.png');
+  mask: url('dkl-hero.png');
 }
 .hero {
-  width: 50%;
-  float: right;
-
- 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border-style: solid;
+  border-width: 20px;
 }
-.case-study{
+
+.case-study {
   padding: 50px;
+  width: 50%;
+}
+.problem-features {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  color: #d8d8d8;
+}
+.problem {
+  width: 50%;
+}
+.features {
+  width: 50%;
+}
+.feature-title {
+  margin: 30px;
 }
