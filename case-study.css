@@ -45,8 +45,16 @@ body {
 }
 
 .case-study {
-  padding: 50px;
-  width: 50%;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1e2124;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.case-study-title {
+  text-align: center;
 }
 .problem-features {
   display: flex;
@@ -55,11 +63,37 @@ body {
   color: #d8d8d8;
 }
 .problem {
-  width: 50%;
+  width: 40%;
+  background-color: #1e2124;
+  padding: 20px;
 }
 .features {
-  width: 50%;
+  width: 40%;
+  background-color: #1e2124;
+  padding: 20px;
 }
 .feature-title {
   margin: 30px;
+}
+.technology {
+  color: white;
+}
+
+.sanity-screenshot {
+  width: 50%;
+  margin: 50px;
+}
+
+.backend {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #1e2124;
+  margin: 50px;
+}
+.backend-titles {
+  margin: 100px;
 }
