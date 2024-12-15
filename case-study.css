@@ -2,98 +2,139 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
 }
-.nav {
-  display: flex;
-  justify-content: space-between;
+.nav-link,
+.nav,
+.nav-item {
+  list-style: none;
   color: #aeb9cc;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
 }
-.header-title {
-  background-image: url('starry-background.JPEG');
-  background-position: bottom;
+.header {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  background-image: url('camera.png'); /* Replace with your image path */
+  background-attachment: fixed; /* Enables parallax */
+  background-position: center;
   background-size: cover;
-  padding: 5rem;
-  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .title {
+  position: relative; /* Keep title above the header */
+  z-index: 1; /* Ensure it appears above the background */
   text-align: center;
-  padding-top: 70px;
-  font-size: clamp(4rem, 5vh + 0.5rem, 5rem);
-
+  font-size: clamp(2rem, 5vw, 4rem);
   color: #d8d8d8;
-  position: fixed;
+  font-family: 'Rubik 80s Fade', system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.lead {
+/* Overlay for Dimmed Effect */
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Adds a dim overlay */
+  z-index: 0; /* Ensures overlay is beneath the title */
+}
+.description {
+  text-align: center;
+  width: 100%; /* Optional: controls the width of the section */
+  margin: auto; /* Centers the section horizontally and adds vertical spacing */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  padding: 100px;
 }
+.lead {
+  color: #798289;
+  padding-bottom: 50px;
+
+  padding-top: 25px;
+}
+
 .site-header-mask {
   position: absolute;
   inset: 0;
-  -webkit-mask: url('dkl-hero.png');
-  mask: url('dkl-hero.png');
+  -webkit-mask: url('camera.png');
+  mask: url('camera.png');
 }
 .hero {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
-  border-style: solid;
-  border-width: 20px;
+  width: 65%;
 }
 
-.case-study {
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #1e2124;
-  padding: 20px;
-  margin-bottom: 50px;
-}
 .case-study-title {
   text-align: center;
+  font-family: 'Rubik 80s Fade', system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-.problem-features {
-  display: flex;
-  justify-content: space-between;
-  justify-content: space-evenly;
-  color: #d8d8d8;
-}
-.problem {
-  width: 40%;
-  background-color: #1e2124;
-  padding: 20px;
-}
-.features {
-  width: 40%;
-  background-color: #1e2124;
-  padding: 20px;
-}
-.feature-title {
-  margin: 30px;
-}
-.technology {
+
+h2 {
+  font-family: 'Rubik 80s Fade', system-ui;
+  font-weight: 400;
+  font-style: normal;
   color: white;
+  padding-top: 50px;
 }
 
-.sanity-screenshot {
-  width: 50%;
-  margin: 50px;
+.video-container {
+  display: block; /* Makes the video a block element */
+  margin-left: auto; /* Centers the video horizontally */
+  margin-right: auto; /* Centers the video horizontally */
+  margin-top: 20px; /* Optional: adds space above the video */
 }
 
-.backend {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
+.footer {
   background-color: #1e2124;
-  margin: 50px;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-.backend-titles {
-  margin: 100px;
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: #aeb9cc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.technologies {
+  margin-top: 20px;
+}
+
+.technologies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.technologies li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
