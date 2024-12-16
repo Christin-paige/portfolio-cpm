@@ -42,14 +42,40 @@ body {
   background: rgba(0, 0, 0, 0.4); /* Adds a dim overlay */
   z-index: 0; /* Ensures overlay is beneath the title */
 }
-.description {
-  text-align: center;
-  width: 100%; /* Optional: controls the width of the section */
-  margin: auto; /* Centers the section horizontally and adds vertical spacing */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 100px;
+
+.container .row {
+  display: flex; /* Flex layout for larger screens */
+  flex-wrap: nowrap; /* Prevent wrapping by default */
+  gap: 20px; /* Add spacing between columns */
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .container .row {
+    flex-direction: column; /* Stack elements vertically */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 40px; /* Add extra spacing between stacked elements */
+  }
+
+  .container .col {
+    width: 100%; /* Make each column take full width */
+    text-align: left; /* Center-align content for better readability */
+  }
+  .objectives,
+  .features,
+  .tech-stack,
+  .backend {
+    text-align: left; /* Optional: Left-align section titles if needed */
+  }
+
+  .video-container,
+  img {
+    margin: 0 auto; /* Center media elements */
+    display: block; /* Ensure proper layout */
+    width: 100%; /* Make videos and images responsive */
+    max-width: 100%; /* Prevent images from stretching */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 .lead {
   color: #798289;
@@ -77,8 +103,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-p {
-}
+
 
 h2 {
   font-family: 'Rubik 80s Fade', system-ui;
