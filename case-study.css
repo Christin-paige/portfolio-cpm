@@ -43,14 +43,65 @@ body {
   z-index: 0; /* Ensures overlay is beneath the title */
 }
 
+/* Default styling for larger screens (Desktop View) */
 .container .row {
-  display: flex; /* Flex layout for larger screens */
-  flex-wrap: nowrap; /* Prevent wrapping by default */
-  gap: 20px; /* Add spacing between columns */
+  display: flex; /* Maintain side-by-side layout */
+  flex-direction: row; /* Ensure row layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 20px; /* Space between columns */
+  align-items: flex-start; /* Align columns to the top */
+}
+
+.container .col {
+  flex: 1; /* Ensure equal width columns */
+}
+/* Case Study Section Styling */
+.case-study-section {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: black; /* Ensure background matches */
+  color: white;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.case-study-section h2 {
+  font-family: 'Rubik 80s Fade', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px; /* Add spacing below the title */
+}
+
+.case-study-section p {
+  margin-bottom: 40px; /* Add spacing below the paragraph */
+  color: #798289; /* Adjust text color for better contrast */
+}
+
+.case-study-section .hero {
+  width: 100%;
+  max-width: 100%; /* Limit the maximum size of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px;
 }
 
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
+  .title {
+    padding: 50px;
+  }
+  .case-study-section {
+    height: auto; /* Remove full height on mobile */
+    padding: 40px 20px; /* Add more padding for smaller screens */
+    text-align: left;
+  }
+
+  .case-study-section .hero {
+    max-width: 100%; /* Make the image fully responsive */
+  }
   .container .row {
     flex-direction: column; /* Stack elements vertically */
     flex-wrap: wrap; /* Allow wrapping */
@@ -103,7 +154,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 
 h2 {
   font-family: 'Rubik 80s Fade', system-ui;
