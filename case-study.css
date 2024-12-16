@@ -77,6 +77,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+p {
+}
 
 h2 {
   font-family: 'Rubik 80s Fade', system-ui;
@@ -137,4 +139,3 @@ h2 {
   display: inline-block;
   margin-right: 15px;
 }
-
